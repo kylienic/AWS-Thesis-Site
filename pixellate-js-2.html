@@ -21,11 +21,23 @@ canvas {
 .controls{
     display: inline-block;
     position: relative;
-    margin-top: -700px;
+    margin-top: -600px;
 
 }
 .wrapper{
     position: absolute;
+}
+input[type=range].blocks {
+    -webkit-appearance: none;
+    width: 200px;
+    height:10px;
+
+      -webkit-transform:rotate(90deg);       
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    z-index: 0;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -42,7 +54,7 @@ canvas {
     <!--  -->
     <canvas id="example" width="200" height="60"></canvas>
     <div id="status"></div>
-    <div id="color-box" style="width: 100px; height:100px;"></div>	
+    <div id="color-box" style="width: 100px; height:100px;"></div>  
 <!--<input id="animate" type="button" value="Animate">-->
 </div>
 </div>
